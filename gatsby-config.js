@@ -1,7 +1,19 @@
+require('dotenv').config();
+const path = require('path');
+
+const gatsbyRequiredRules = path.join(
+  process.cwd(),
+  'node_modules',
+  'gatsby',
+  'dist',
+  'utils',
+  'eslint-rules',
+);
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Michael Koo's Website`,
+    description: `Welcome, I am Michael Koo. `,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
@@ -31,6 +43,29 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        postCssPlugins: [
+          require("tailwindcss"),
+          require("./tailwind.config.js"), // Optional: Load custom Tailwind CSS configuration
+        ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-eslint',
+      options: {
+        // Gatsby required rules directory
+        rulePaths: [gatsbyRequiredRules],
+        // Default settings that may be ommitted or customized
+        stages: ['develop'],
+        extensions: ['js', 'jsx', 'ts', 'tsx'],
+        exclude: ['node_modules', 'bower_components', '.cache', 'public'],
+        // Any additional eslint-webpack-plugin options below
+        // ...
+      },
+    },
+    `gatsby-plugin-postcss`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
