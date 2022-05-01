@@ -14,8 +14,8 @@ module.exports = {
   siteMetadata: {
     title: `Michael Koo's Website`,
     description: `Welcome, I am Michael Koo. `,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    author: `@kooma93`,
+    siteUrl: `https://michaelkoo.dev/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -40,7 +40,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/mk-favicon.png`, // This path is relative to the root of the site.
       },
     },
     {
