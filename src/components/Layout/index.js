@@ -25,19 +25,11 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <>
+    <div className="max-w-[1145px] m-auto">
       <Header siteTitle={data.site.siteMetadata?.title || 'Title'} />
-      <div
-        style={{
-          margin: '0 auto',
-          maxWidth: 'var(--size-content)',
-          padding: 'var(--size-gutter)',
-        }}
-      >
-        <main>{children}</main>
-      </div>
+      <main>{children}</main>
       <Footer />
-    </>
+    </div>
   );
 };
 
