@@ -4,7 +4,7 @@
  *
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
-
+/* eslint-disable react/function-component-definition */
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
