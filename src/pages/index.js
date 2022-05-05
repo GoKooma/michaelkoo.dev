@@ -21,7 +21,8 @@ const IndexPage = () => (
         </div>
         <div className="py-12 m-auto md:ml-4">
           <StaticImage
-            src="../images/coding-michael-crop-tinified.png"
+            src="../images/coding-michael-crop.jpg"
+            className="rounded-full"
             placeholder="tracedSVG"
             layout="fixed"
             width={300}
