@@ -5,25 +5,36 @@ import { Link } from 'gatsby';
 
 const Header = ({ siteTitle }) => (
   <header
-    style={{
-      margin: '0 auto',
-      padding: 'var(--space-4) var(--size-gutter)',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      color: 'var(--color-text)',
-    }}
+    className="flex flex-row items-center justify-between mx-8 py-4 text-base text-theme-cream no-underline h-[75px]"
   >
-    <Link
-      to="/"
-      style={{
-        fontSize: 'var(--font-sm)',
-        textDecoration: 'none',
-        color: 'var(--color-text)',
-      }}
-    >
-      Michael Koo
-    </Link>
+    <div className="relative">
+      <Link
+        to="/"
+        className=""
+      >
+        <h2 className="text-theme-cream text-4xl">Michael Koo</h2>
+      </Link>
+    </div>
+    <nav className="relative w-[15%] hidden">
+      <menu className="flex flex-row items-center justify-around text-theme-cream">
+        <li>
+          <Link
+            to="/"
+            className=""
+          >
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/about"
+            className=""
+          >
+            About
+          </Link>
+        </li>
+      </menu>
+    </nav>
   </header>
 );
 
