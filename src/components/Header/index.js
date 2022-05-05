@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 
 const Header = ({ siteTitle }) => (
   <header
-    className="flex flex-row items-center justify-between mx-8 py-4 text-base text-theme-cream no-underline h-[75px]"
+    className="flex flex-row items-center justify-between py-4 text-base text-theme-cream no-underline h-[75px]"
   >
     <div className="relative">
       <Link
