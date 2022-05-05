@@ -4,14 +4,12 @@ import * as React from 'react';
 const Footer = () => (
   <footer
     style={{
-      margin: '0 auto',
-      padding: 'var(--space-4) var(--size-gutter)',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
       fontSize: 'var(--font-sm)',
     }}
-    className="w-full"
+    className="w-full my-4"
   >
     ©
     {new Date().getFullYear()}
