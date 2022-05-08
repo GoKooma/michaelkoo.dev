@@ -7,6 +7,7 @@ module.exports = {
         'theme-green': '#02343F',
         'theme-cream': '#F0EDCC',
         pink: '#F7C5CC',
+        'theme-pop': '#ed6f63',
       },
       fontSize: {
         xxs: '0.5rem',
