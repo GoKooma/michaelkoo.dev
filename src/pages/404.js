@@ -7,7 +7,7 @@ const NotFoundPage = () => (
   <>
     <Seo title="404: Not found" />
     <div>
-      <h1 className="text-4xl font-bold text-pink mb-12">404</h1>
+      <h1 className="text-4xl font-bold text-theme-pop mb-12">404</h1>
       <p className="mb-12">Uh oh, your requested page was not found.</p>
       <Link
         to="/"
