@@ -5,18 +5,20 @@ import { Link } from 'gatsby';
 
 const Header = ({ siteTitle }) => (
   <header
-    className="flex flex-row items-center justify-between py-4 text-base text-theme-cream no-underline h-[75px]"
+    className="flex flex-row items-center justify-between py-4 text-base text-theme-green no-underline h-[75px]"
   >
     <div className="relative">
       <Link
         to="/"
         className=""
       >
-        <h2 className="text-theme-cream text-4xl">Michael Koo</h2>
+        <h2 className="text-theme-pop text-xl">
+          Michael Koo
+        </h2>
       </Link>
     </div>
     <nav className="relative w-[15%] hidden">
-      <menu className="flex flex-row items-center justify-around text-theme-cream">
+      <menu className="flex flex-row items-center justify-around text-theme-green">
         <li>
           <Link
             to="/"
