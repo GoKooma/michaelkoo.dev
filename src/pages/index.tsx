@@ -1,8 +1,6 @@
-/* eslint-disable */
 import * as React from 'react';
-import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { FiGithub, FiLink, FiLinkedin } from 'react-icons/fi'
+import { FiGithub, FiLinkedin } from 'react-icons/fi';
 import Seo from '../components/seo';
 
 const IndexPage = () => (
@@ -31,9 +29,31 @@ const IndexPage = () => (
               </a>
             </li>
           </ul>
-          <p className="text-xl mb-4">I am a <span className="font-bold text-theme-pop">Full Stack Developer.</span></p>
+          <p className="text-xl mb-4">
+            I am a
+            {' '}
+            <span className="font-bold text-theme-pop">
+              Full Stack Developer.
+            </span>
+          </p>
           <p className="text-xl">
-            I build websites with <strong>JAM Stack</strong>, REST APIs with <strong>Node.js</strong>, and engineer infrastructure with <strong>Kubernetes and Docker</strong> during my day job.
+            I build websites with
+            {' '}
+            <strong>
+              JAM Stack
+            </strong>
+            , REST APIs with
+            {' '}
+            <strong>
+              Node.js
+            </strong>
+            , and engineer infrastructure with
+            {' '}
+            <strong>
+              Kubernetes and Docker
+            </strong>
+            {' '}
+            during my day job.
           </p>
           <p className="text-xl text-gray-400">
             <em>This site is a work in progress. So check back often!</em>
@@ -60,6 +80,6 @@ const IndexPage = () => (
       </section>
     </div>
   </>
-)
+);
 
 export default IndexPage;
