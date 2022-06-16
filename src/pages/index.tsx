@@ -4,7 +4,6 @@ import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import Seo from '../components/seo';
-import * as styles from '../components/index.module.css';
 
 const IndexPage = () => (
   <>
@@ -22,6 +21,7 @@ const IndexPage = () => (
         <div className="py-12 m-auto md:ml-4">
           <StaticImage
             src="../images/coding-michael-crop.jpg"
+            alt="Michael Coding at Cafe"
             className="rounded-full"
             placeholder="tracedSVG"
             layout="fixed"
