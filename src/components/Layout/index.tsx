@@ -25,13 +25,13 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <div className="max-w-[1145px] mx-4 lg:mx-auto">
+    <>
       <Header siteTitle={data.site.siteMetadata?.title || 'Title'} />
-      <main className="min-h-screen">
+      <main className="min-h-screen max-w-[1145px] mx-4 lg:mx-auto">
         {children}
       </main>
       <Footer />
-    </div>
+    </>
   );
 };
 

@@ -2,19 +2,27 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header
-    className="flex flex-row items-center justify-between py-4 text-base text-theme-green no-underline h-[75px]"
+    className="flex flex-row items-center justify-between py-4 text-base text-theme-green no-underline h-[75px] max-w-[1145px] mx-4 lg:mx-auto"
   >
     <div className="relative">
       <Link
         to="/"
         className=""
       >
-        <h2 className="text-theme-pop text-xl">
+        <StaticImage
+          src="../../images/mk-favicon.png"
+          alt="Michaelkoo.dev Logo"
+          placeholder="tracedSVG"
+          layout="fixed"
+          width={35}
+        />
+        {/* <h2 className="text-theme-pop text-xl">
           Michael Koo
-        </h2>
+        </h2> */}
       </Link>
     </div>
     <nav className="relative w-[15%] hidden">

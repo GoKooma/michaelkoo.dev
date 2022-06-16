@@ -9,7 +9,7 @@ const Footer = () => (
       justifyContent: 'space-between',
       fontSize: 'var(--font-sm)',
     }}
-    className="w-full my-4"
+    className="w-full my-4 max-w-[1145px] mx-4 lg:mx-auto"
   >
     ©
     {new Date().getFullYear()}
