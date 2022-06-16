@@ -14,5 +14,7 @@ export const wrapPageElement = ({
   element,
   props,
 }) => (
-  <Layout {...props}>{element}</Layout>
+  <Layout {...props}>
+    {element}
+  </Layout>
 );
