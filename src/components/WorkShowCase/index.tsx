@@ -1,7 +1,23 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const WorkShowCase = ({ work }) => {
+interface WorkProps {
+  work: {
+    title: string,
+    description: string,
+    website: {
+      live: boolean,
+      demo: boolean,
+      url: string,
+    },
+    github: {
+      url: string,
+      private: boolean,
+    },
+    asset: string,
+  }
+}
+
+const WorkShowCase: React.FC<WorkProps> = ({ work }) => {
   const {
     title,
     description,
@@ -58,20 +74,3 @@ const WorkShowCase = ({ work }) => {
 };
 
 export default WorkShowCase;
-
-WorkShowCase.propTypes = {
-  work: PropTypes.shape({
-    title: PropTypes.string,
-    description: PropTypes.string,
-    website: PropTypes.shape({
-      live: PropTypes.bool,
-      demo: PropTypes.bool,
-      url: PropTypes.string,
-    }),
-    github: PropTypes.shape({
-      url: PropTypes.string,
-      private: PropTypes.bool,
-    }),
-    asset: PropTypes.string,
-  }).isRequired,
-};
