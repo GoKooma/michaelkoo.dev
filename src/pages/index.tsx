@@ -1,7 +1,31 @@
 import * as React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { FiGithub, FiLinkedin } from 'react-icons/fi';
+import Carousel from 'react-multi-carousel';
 import Seo from '../components/seo';
+import 'react-multi-carousel/lib/styles.css';
+
+import works from '../data/works.json';
+import WorkShowCase from '../components/WorkShowCase';
+
+const responsive = {
+  largeDesktop: {
+    breakpoint: { max: 4000, min: 2880 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 2880, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
 
 const IndexPage = () => (
   <>
@@ -70,12 +94,28 @@ const IndexPage = () => (
           />
         </div>
       </div>
-      <section>
-        <div className="hidden">
+      <section className="mb-8">
+        <div className="mb-4">
           <h2 className="">
             Projects
           </h2>
           <hr className="w-[4rem] h-[2px]" />
+          <p className="text-gray-400">
+            Feel free to check out some works I have done:
+          </p>
+        </div>
+        <div>
+          <Carousel
+            swipeable
+            draggable={false}
+            responsive={responsive}
+            // infinite
+            keyBoardControl
+            removeArrowOnDeviceType="desktop"
+            // centerMode
+          >
+            {works.works.map((work) => (<WorkShowCase work={work} />))}
+          </Carousel>
         </div>
       </section>
     </div>
