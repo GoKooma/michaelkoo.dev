@@ -1,0 +1,46 @@
+{
+  "works": [
+    {
+      "title": "Penn Dental Clinic",
+      "description": "Home page that introduces and informs patients and potential patients of Penn Dental Clinic",
+      "website": {
+        "live": true,
+        "demo": false,
+        "url": "https://penn.co.kr"
+      },
+      "github": {
+        "url": "",
+        "private": true
+      },
+      "asset": "https://michaelkoo.s3.us-west-1.amazonaws.com/penn-dental-logo.png"
+    },
+    {
+      "title": "LIBIAM App",
+      "description": "Personalized Book Gerenator app that collects survey data from user to generate a personalized book",
+      "website": {
+        "live": false,
+        "demo": true,
+        "url": "https://youtu.be/37keG2QP0l8"
+      },
+      "github": {
+        "url": "https://github.com/LIBIAM-Book/LIBIAM-App",
+        "private": false
+      },
+      "asset": "https://michaelkoo.s3.us-west-1.amazonaws.com/libiam_demo.jpeg"
+    },
+    {
+      "title": "Portfolio Website",
+      "description": "Check out the source code for this website!",
+      "website": {
+        "live": true,
+        "demo": false,
+        "url": "/#"
+      },
+      "github": {
+        "url": "https://github.com/kooma93/michaelkoo.dev",
+        "private": false
+      },
+      "asset": "https://michaelkoo.s3.us-west-1.amazonaws.com/mk-favicon.png"
+    }
+  ]
+}
