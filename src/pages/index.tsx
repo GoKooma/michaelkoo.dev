@@ -2,6 +2,7 @@ import * as React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { FiGithub, FiLinkedin } from 'react-icons/fi';
 import Carousel from 'react-multi-carousel';
+import ContactForm from '../components/ContactForm';
 import Seo from '../components/seo';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -117,6 +118,18 @@ const IndexPage = () => (
             {works.works.map((work) => (<WorkShowCase work={work} />))}
           </Carousel>
         </div>
+      </section>
+      <section className="my-20 mx-auto w-full md:min-w-[500px] md:w-[60%] text-center">
+        <div className="mb-4">
+          <h2 className="">
+            Say hi
+          </h2>
+          <hr className="w-[4rem] h-[2px] mx-auto" />
+          <p className="">
+            Have some questions? Let&apos;s keep in touch!
+          </p>
+        </div>
+        <ContactForm />
       </section>
     </div>
   </>
