@@ -9,6 +9,7 @@
     "arrow-body-style": "warn",
     "no-anonymous-exports-page-templates": "warn",
     "limited-exports-page-templates": "warn",
+    "max-len": "warn"
     // "prettier/prettier": "warn"
   },
   "env": {
