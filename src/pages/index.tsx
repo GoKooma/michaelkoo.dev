@@ -61,7 +61,7 @@ const IndexPage = () => (
               Full Stack Developer.
             </span>
           </p>
-          <p className="text-xl">
+          <p className="text-xl mb-4">
             I build websites with
             {' '}
             <strong>
@@ -80,13 +80,24 @@ const IndexPage = () => (
             {' '}
             during my day job.
           </p>
-          <p className="text-xl text-gray-400">
+          <p className="text-xl">
+            I
+            {' '}
+            <em>enjoy</em>
+            {' '}
+            building web apps and learning new technologies everyday.
+            {' '}
+            I like working as a team; I regularly attend hackathons
+            {' '}
+            to build fun apps with friends and people I meet at hackathons.
+          </p>
+          <p className="text-base text-gray-400">
             <em>This site is a work in progress. So check back often!</em>
           </p>
         </div>
         <div className="py-12 m-auto md:ml-4">
           <StaticImage
-            src="../images/coding-michael-crop.jpg"
+            src="../images/happy-michael-crop.jpg"
             alt="Michael Coding at Cafe"
             className="rounded-full"
             placeholder="tracedSVG"
@@ -108,11 +119,11 @@ const IndexPage = () => (
         <div>
           <Carousel
             swipeable
-            draggable={false}
+            draggable
             responsive={responsive}
             // infinite
             keyBoardControl
-            removeArrowOnDeviceType="desktop"
+            // removeArrowOnDeviceType="desktop"
             // centerMode
           >
             {works.works.map((work) => (<WorkShowCase work={work} />))}
@@ -126,7 +137,7 @@ const IndexPage = () => (
           </h2>
           <hr className="w-[4rem] h-[2px] mx-auto" />
           <p className="">
-            Have some questions? Let&apos;s keep in touch!
+            Have some questions? Let me know!
           </p>
         </div>
         <ContactForm />
