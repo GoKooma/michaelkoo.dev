@@ -43,7 +43,7 @@
       "asset": "https://michaelkoo.s3.us-west-1.amazonaws.com/MyGIBuddy+Mascot.png"
     },
     {
-      "title": "Portfolio Website",
+      "title": "Personal Website",
       "description": "I built this website using Gatsby. Check out the source code for this website!",
       "website": {
         "live": false,

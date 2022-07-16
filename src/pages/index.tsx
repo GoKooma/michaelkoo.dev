@@ -58,16 +58,26 @@ const IndexPage = () => (
             I am a
             {' '}
             <span className="font-bold text-theme-pop">
-              Full Stack Developer.
+              Full Stack Developer
             </span>
+            {' '}
+            at
+            {' '}
+            <a
+              href="https://www.polarprofilters.com"
+              target="blank"
+              className="underline text-theme-pop font-bold"
+            >
+              PolarPro.
+            </a>
           </p>
           <p className="text-xl mb-4">
-            I build websites with
+            I build frontend with
             {' '}
             <strong>
               JAM Stack
             </strong>
-            , REST APIs with
+            , backend with
             {' '}
             <strong>
               Node.js
@@ -77,15 +87,14 @@ const IndexPage = () => (
             <strong>
               Kubernetes and Docker
             </strong>
-            {' '}
-            during my day job.
+            .
           </p>
           <p className="text-xl">
-            I
+            Aside work, I
             {' '}
             <em>enjoy</em>
             {' '}
-            building web apps and learning new technologies everyday.
+            building web apps and learning new technologies during my free time.
             {' '}
             I like working as a team; I regularly attend hackathons
             {' '}
