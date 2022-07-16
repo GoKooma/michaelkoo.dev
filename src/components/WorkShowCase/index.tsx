@@ -8,6 +8,7 @@ interface WorkProps {
       live: boolean,
       demo: boolean,
       url: string,
+      message?: string,
     },
     github: {
       url: string,
@@ -32,6 +33,8 @@ const WorkShowCase: React.FC<WorkProps> = ({ work }) => {
     websiteBtn = 'Live Site';
   } else if (website.demo) {
     websiteBtn = 'Demo';
+  } else if (website.message) {
+    websiteBtn = website.message;
   } else {
     websiteBtn = 'Demo Not Available :(';
   }
@@ -51,21 +54,21 @@ const WorkShowCase: React.FC<WorkProps> = ({ work }) => {
         <div className="absolute bottom-6 left-0 right-0">
           <button
             type="button"
-            className="w-[120px] h-[30px] text-base rounded-lg shadow-md mr-2 hover:shadow-xl transition-all hover:text-white"
+            className="w-[120px] h-[30px] text-base text-black rounded-lg shadow-md mr-2 hover:shadow-xl transition-all"
             disabled={!(website.live || website.demo)}
           >
             {(website.live || website.demo)
-              ? <a href={website.url}>{websiteBtn}</a>
+              ? <a href={website.url} target="blank">{websiteBtn}</a>
               : websiteBtn}
           </button>
           <button
             type="button"
-            className={`w-[120px] h-[30px] text-base rounded-lg shadow-md ${github.private ? 'opacity-60' : 'hover:shadow-xl transition-all hover:text-white'}`}
+            className={`w-[120px] h-[30px] text-base rounded-lg shadow-md ${github.private ? 'opacity-60' : 'hover:shadow-xl transition-all'}`}
             disabled={github.private}
           >
             {github.private
               ? 'Private Repo'
-              : <a href={github.url}>Source Code</a>}
+              : <a href={github.url} target="blank">Source Code</a>}
           </button>
         </div>
       </div>
