@@ -39,7 +39,7 @@ const IndexPage = () => (
           <ul className="flex justify-start m-0 mb-[50px]">
             <li className="mr-2 w-[35px]">
               <a
-                href="https://github.com/kooma93"
+                href="https://github.com/GoKooma"
                 className="w-full h-full"
               >
                 <FiGithub className="w-full text-2xl" />
@@ -47,7 +47,7 @@ const IndexPage = () => (
             </li>
             <li className="w-[35px]">
               <a
-                href="https://linkedin.com/in/kweonkoo"
+                href="https://linkedin.com/in/gokooma"
                 className="w-full h-full"
               >
                 <FiLinkedin className="w-full text-2xl" />
