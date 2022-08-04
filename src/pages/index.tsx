@@ -90,7 +90,7 @@ const IndexPage = () => (
             .
           </p>
           <p className="text-xl">
-            Aside work, I
+            Aside from work, I
             {' '}
             <em>enjoy</em>
             {' '}
