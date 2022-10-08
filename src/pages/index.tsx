@@ -58,8 +58,9 @@ const IndexPage = () => (
             I am a
             {' '}
             <span className="font-bold text-theme-pop">
-              Full Stack Developer
+              Software Development Engineer
             </span>
+            {/*
             {' '}
             at
             {' '}
@@ -70,6 +71,7 @@ const IndexPage = () => (
             >
               PolarPro.
             </a>
+            */}
           </p>
           <p className="text-xl mb-4">
             I build frontend with
