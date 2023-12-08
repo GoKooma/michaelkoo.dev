@@ -9,12 +9,9 @@ const Footer = () => (
       justifyContent: 'space-between',
       fontSize: 'var(--font-sm)',
     }}
-    className="w-full my-4 max-w-[1145px] mx-4 lg:mx-auto"
+    className="w-full my-4 max-w-[1145px] px-4 mx-auto"
   >
-    ©
-    {new Date().getFullYear()}
-    {' '}
-    &middot; Michael Koo
+    ©2022 &middot; Michael Koo
   </footer>
 );
 

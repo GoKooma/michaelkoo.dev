@@ -6,7 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const Header = () => (
   <header
-    className="flex flex-row items-center justify-between py-4 text-base text-theme-green no-underline h-[75px] max-w-[1145px] mt-8 mx-4 lg:mx-auto"
+    className="flex flex-row items-center justify-between py-4 text-base text-theme-green no-underline h-[75px] max-w-[1145px] mt-8 px-4 mx-auto"
   >
     <div className="relative">
       <Link

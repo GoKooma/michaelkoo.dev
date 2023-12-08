@@ -31,7 +31,7 @@ const Layout: React.FC<ChildrenProps> = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || 'Title'} />
-      <main className="min-h-screen max-w-[1145px] mx-4 lg:mx-auto">
+      <main className="min-h-screen md:min-w-[1080px] max-w-[1145px] px-4 mx-auto">
         {children}
       </main>
       <Footer />

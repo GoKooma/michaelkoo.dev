@@ -32,7 +32,7 @@ const IndexPage = () => (
   <>
     <Seo title="Home" />
     <div className="">
-      <div className="flex flex-col-reverse m-auto md:flex-row pt-12 pb-8">
+      <div className="flex flex-col-reverse m-auto md:flex-row pt-12 pb-4">
         <div className="md:w-2/3 md:min-w-[450px]">
           <h1 className="text-[5rem] mb-0">Hi, I am</h1>
           <h1 className="text-theme-pop text-[5rem] mb-[20px]">Michael Koo.</h1>
@@ -60,36 +60,13 @@ const IndexPage = () => (
             <span className="font-bold text-theme-pop">
               Software Development Engineer
             </span>
-            {/*
             {' '}
-            at
-            {' '}
-            <a
-              href="https://www.polarprofilters.com"
-              target="blank"
-              className="underline text-theme-pop font-bold"
-            >
-              PolarPro.
-            </a>
-            */}
+            <a className="underline hover:underline hover:text-theme-pop-highlight" href="amazon.com">&#64; Amazon</a>
           </p>
           <p className="text-xl mb-4">
-            I build frontend with
+            I am adept at full stack development with extensive background
             {' '}
-            <strong>
-              JAM Stack
-            </strong>
-            , backend with
-            {' '}
-            <strong>
-              Node.js
-            </strong>
-            , and engineer infrastructure with
-            {' '}
-            <strong>
-              Kubernetes and Docker
-            </strong>
-            .
+            in TypeScript, Java, and infrastructure management via IaC.
           </p>
           <p className="text-xl">
             Aside from work, I
@@ -98,23 +75,53 @@ const IndexPage = () => (
             {' '}
             building web apps and learning new technologies during my free time.
             {' '}
-            I like working as a team; I regularly attend hackathons
+            I love collaboration to build something awesome! I regularly attend hackathons
             {' '}
-            to build fun apps with friends and people I meet at hackathons.
-          </p>
-          <p className="text-base text-gray-400">
-            <em>This site is a work in progress. So check back often!</em>
+            to build fun apps with people I come across at hackathons.
           </p>
         </div>
-        <div className="py-12 m-auto md:ml-4">
+        <div className="py-4 md:py-12 m-auto md:ml-4">
           <StaticImage
-            src="../images/happy-michael-crop.jpg"
-            alt="Michael Coding at Cafe"
-            className="rounded-full"
+            src="../images/Michael_with_coffee.jpeg"
+            alt="Michael with coffee"
+            className="rounded-lg"
             placeholder="tracedSVG"
             layout="fixed"
             width={300}
           />
+        </div>
+      </div>
+      <div className="flex flex-col m-auto md:flex-row pb-4 md:pb-8">
+        <div className="pb-4 md:py-4 m-auto md:ml-4 md:mr-16">
+          <StaticImage
+            src="../images/Churri.JPG"
+            alt="My puppy, Churri"
+            className="rounded-lg"
+            placeholder="tracedSVG"
+            layout="constrained"
+            width={500}
+          />
+        </div>
+        <div className="py-4 md:py-12">
+          <p className="text-xl mb-4">
+            I am a coffee lover (my life elixir...☕️), passionate tennis player 🎾,
+            {' '}
+            and a dog lover 🐶. I start my day with a cup of latte, code in zen mode,
+            {' '}
+            play some tennis rallies if the evening is free, and go for a walk
+            {' '}
+            with my wife and my 10 months old puppy, Churri 🐶
+          </p>
+          <p className="text-xl">
+            The picture on the
+            {' '}
+            <span className="md:hidden">top</span>
+            <span className="hidden md:inline">left</span>
+            {' '}
+            was taken by my best friend when my family visited
+            {' '}
+            Point Reyes in NorCal. Although Churri could not enter the trail, he enjoyed the view!
+          </p>
         </div>
       </div>
       <section className="mb-8">
@@ -132,10 +139,7 @@ const IndexPage = () => (
             swipeable
             draggable
             responsive={responsive}
-            // infinite
             keyBoardControl
-            // removeArrowOnDeviceType="desktop"
-            // centerMode
           >
             {works.works.map((work) => (<WorkShowCase work={work} />))}
           </Carousel>

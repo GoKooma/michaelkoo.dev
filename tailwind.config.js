@@ -8,6 +8,7 @@ module.exports = {
         'theme-cream': '#F0EDCC',
         pink: '#F7C5CC',
         'theme-pop': '#ed6f63',
+        'theme-pop-highlight': '#fd7f73',
       },
       fontSize: {
         xxs: '0.5rem',
