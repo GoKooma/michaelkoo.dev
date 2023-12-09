@@ -61,12 +61,14 @@ const IndexPage = () => (
               Software Development Engineer
             </span>
             {' '}
-            <a className="underline hover:underline hover:text-theme-pop-highlight" href="amazon.com">&#64; Amazon</a>
+            <a className="underline hover:underline hover:text-theme-pop-highlight" href="https://www.amazon.com">&#64; Amazon</a>
           </p>
           <p className="text-xl mb-4">
             I am adept at full stack development with extensive background
             {' '}
-            in TypeScript, Java, and infrastructure management via IaC.
+            in TypeScript, Java, and infrastructure management via IaC, mostly in ecommerce space.
+            {' '}
+            I am eager to leverage my experience to deliver intuitive and pleasant user experience.
           </p>
           <p className="text-xl">
             Aside from work, I
@@ -75,9 +77,9 @@ const IndexPage = () => (
             {' '}
             building web apps and learning new technologies during my free time.
             {' '}
-            I love collaboration to build something awesome! I regularly attend hackathons
+            I love collaborating with people to build something awesome!
             {' '}
-            to build fun apps with people I come across at hackathons.
+            I regularly attend hackathons to build fun apps with people I come across at hackathons.
           </p>
         </div>
         <div className="py-4 md:py-12 m-auto md:ml-4">
@@ -104,7 +106,15 @@ const IndexPage = () => (
         </div>
         <div className="py-4 md:py-12">
           <p className="text-xl mb-4">
-            I am a coffee lover (my life elixir...☕️), passionate tennis player 🎾,
+            I am a loving husband,
+            {' '}
+            <a className="underline hover:underline hover:text-theme-pop-highlight" href="https://elishamichael.day">happily married</a>
+            {' '}
+            to
+            {' '}
+            <a className="underline hover:underline hover:text-theme-pop-highlight" href="https://elishapark.webflow.io/">Elisha Park,</a>
+            {' '}
+            a coffee drinker (my life elixir...☕️), passionate tennis player 🎾,
             {' '}
             and a dog lover 🐶. I start my day with a cup of latte, code in zen mode,
             {' '}
